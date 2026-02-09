@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yay 💕</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <img
+      src="https://media1.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZXh6ZHc5enl6bXlud3M1aTMzOXlnaTU2dXJ4NGU5dTNqN21vNHVmaCZlcD12MV9naWZzX3RyZW5kaW5nJmN0PWc/IajDdnR4qCY2R06vTg/giphy.webp"
+      class="cute-video"
+      alt="cute love animation"
+    />
+
+    <h1>Yay! 💖</h1>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const yourName = params.get("you");
+    const valentineName = params.get("love");
+
+    document.getElementById("message").innerText =
+      `${valentineName} you didn’t just enter my life — you became the reason I believe in love again. Forever yours, ${yourName}! 💕`;
+  </script>
+
+</body>
+</html>
